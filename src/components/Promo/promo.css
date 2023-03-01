@@ -1,0 +1,40 @@
+.promo {
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url(../../images/background-logo.svg) ;
+  background-color: #073042;
+  background-repeat: no-repeat;
+  background-position: center top 82px;
+  padding: 184px 275px 224px
+}
+
+.promo__title {
+  margin: 0 auto;
+  max-width: 730px;
+  color: white;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .promo {
+    padding: 326px 10px 342px;
+    background-position: center top 224px;
+  }
+}
+
+@media (max-width: 320px) {
+  .promo {
+    padding: 207px 10px 246px;
+    background-image: url(../../images/background-logo_small.png);
+    background-position: center top 142px;
+  }
+
+  .promo__title {
+    font-size: 31px;
+    line-height: 39px;
+  }
+}

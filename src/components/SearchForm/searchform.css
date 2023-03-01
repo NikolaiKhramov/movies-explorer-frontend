@@ -1,0 +1,144 @@
+.search-form {
+  width: calc(100% - 140px);
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+.search-form__fieldset {
+  width: 932px;
+  margin: 0;
+  padding: 0;
+  border: 1.5px solid rgba(170, 170, 170, 0.2);
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form__input {
+  width: calc(100% - 109px);
+  margin: 15px 0 15px 22px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8B8B8B;
+  text-overflow: ellipsis;
+}
+
+.search-form__button {
+  width: 34px;
+  height: 34px;
+  margin: 7px 7px 7px 46px;
+  padding: 0;
+  border: none;
+  background-image: url(../../images/arrow-icon_2.png);
+  background-color: inherit;
+}
+
+.search-form__label {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFF;
+}
+
+.search-form__slider {
+  display: flex;
+  margin: 0 0 0 41px;
+  padding: 0;
+  border: none;
+}
+
+.slider__title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.slider__button {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  margin: 0 0 0 14px;
+  border-radius: 16px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.slider__button::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background-color: #8B8B8B;
+  border-radius: 50%;
+  transform: translateX(0);
+}
+
+.slider__button:checked::after {
+  transform: translateX(100%);
+  background-color: #3DDC84;
+}
+
+.slider__button:checked {
+  background-color: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .search-form {
+    width: calc(100% - 60px);
+    padding: 59px 0 53px;
+    flex-direction: column;
+  }
+
+  .search-form__fieldset {
+    width: 100%;
+  }
+
+  .search-form__input {
+    margin: 14px 0 15px 18px;
+  }
+
+  .search-form__slider {
+    margin: 38px 0 0;
+  }
+
+  .slider__button::after {
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .search-form {
+    width: calc(100% - 20px);
+    padding-bottom: 42px;
+  }
+
+  .search-form__input {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .search-form__slider {
+    margin: 44px 0 0;
+  }
+
+  .slider__title {
+    font-size: 11px;
+  }
+}
