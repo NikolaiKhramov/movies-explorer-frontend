@@ -38,8 +38,14 @@
   margin: 7px 7px 7px 46px;
   padding: 0;
   border: none;
-  background-image: url(../../images/arrow-icon_2.png);
+  background-image: url(../../images/arrow-icon_2.svg);
   background-color: inherit;
+}
+
+.search-form__button:hover {
+  opacity: 0.7;
+  transition: opacity 0.15s linear;
+  cursor: pointer;
 }
 
 .search-form__label {

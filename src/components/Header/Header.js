@@ -8,12 +8,14 @@ function Header({isLogged}) {
 
   return (
     <header className={headerClass}>
-      <Link to="/" className="header__link">
-        <img src={logo} className="header__logo" alt="Логотип проекта" />
-      </Link>
+      <div className="header__container">
+        <Link to="/" className="header__link">
+          <img src={logo} className="header__logo" alt="Логотип проекта" />
+        </Link>
         <Navigation
           isLogged={isLogged}
         />
+      </div>
     </header>
   )
 }

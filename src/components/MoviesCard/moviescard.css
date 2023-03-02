@@ -1,15 +1,15 @@
-.movie__container {
+.movie__container_type_image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie__container_type_info {
   margin-top: 7px;
   padding-bottom: 25px;
   border-bottom: 1px solid #424242;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.test_image {
-  width: 100%;
-  object-fit: cover;
 }
 
 .movie__image {

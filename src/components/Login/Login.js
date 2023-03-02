@@ -35,7 +35,7 @@ function Login() {
         </button>
       </form>
       <span className="authentication__redirect">
-        Ещё не зарегистрированы? <Link to="/signup" className="authentication__button_type_redirect">Регистрация</Link>
+        Ещё не зарегистрированы? <Link to="/signup" className="authentication__link">Регистрация</Link>
       </span>
     </div>
   )

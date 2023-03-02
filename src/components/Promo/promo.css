@@ -29,7 +29,7 @@
 @media (max-width: 320px) {
   .promo {
     padding: 207px 10px 246px;
-    background-image: url(../../images/background-logo_small.png);
+    background-image: url(../../images/background-logo_small.svg);
     background-position: center top 142px;
   }
 

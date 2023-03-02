@@ -9,10 +9,10 @@ function Moviescard({isLiked}) {
 
   return (
     <li className="movie">
-      <div className="test_image">
+      <div className="movie__container movie__container_type_image">
         <img src={image} alt="Обложка фильма" className="movie__image" />
       </div>
-      <div className="movie__container">
+      <div className="movie__container movie__container_type_info">
         <h2 className="movie__title">В погоне за Бенкси</h2>
         {location.pathname === '/movies' && (
           <button type="button" className={likeClassName} />

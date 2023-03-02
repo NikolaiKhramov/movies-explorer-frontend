@@ -47,10 +47,12 @@ function Register() {
         </button>
       </form>
       <span className="authentication__redirect">
-        Уже зарегистрированы? <Link to="/signin" className="authentication__button_type_redirect">Войти</Link>
+        Уже зарегистрированы? <Link to="/signin" className="authentication__link">Войти</Link>
       </span>
     </div>
   )
 }
 
 export default Register;
+
+// пофиксить стили для класса аут__баттон, переписать для каждого модификатора? так же в логине
