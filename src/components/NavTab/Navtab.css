@@ -1,0 +1,37 @@
+.navtab {
+  background-color: #272727;
+  padding: 24px 0;
+}
+
+.navtab__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.navtab__list-item:not(:last-of-type) {
+  margin-right: 40px;;
+}
+
+.navtab__link {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+@media (max-width: 320px) {
+  .navtab__link {
+    font-size: 11px;
+  }
+
+  .navtab__list-item:not(:last-of-type) {
+    margin-right: 24px;
+  }
+
+}

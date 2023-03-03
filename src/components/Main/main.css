@@ -1,0 +1,16 @@
+.main {
+  margin-bottom: 203px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-bottom: 168px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    margin-bottom: 149px;
+  }
+}
+
