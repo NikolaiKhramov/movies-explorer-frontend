@@ -1,6 +1,6 @@
 .header {
   margin: 0 auto;
-  background-color: #073042;;
+  /*background-color: #073042;*/
   box-sizing: border-box;
 }
 
@@ -13,6 +13,10 @@
   background-color: inherit;
   padding: 18px 0;
   align-items: center;
+}
+
+.header__default {
+  background-color: #073042
 }
 
 .header__container {

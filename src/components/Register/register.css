@@ -70,7 +70,8 @@
   padding: 14px 0;
   width: 100%;
   text-align: center;
-  background-color: #4285F4;
+  /*background-color: #4285F4;*/
+  background-color: rgba(66, 133, 244, 0.4);
   border: none;
   border-radius: 3px;
   color: #FFF;
@@ -79,12 +80,22 @@
   line-height: 17px;
 }
 
+.authentication__button_active {
+  background-color: #4285F4;
+}
+
+.authentication__button_active:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+/*
 .authentication__button:hover {
   opacity: 0.7;
   transition: opacity 0.2s linear;
   cursor: pointer;
 }
-
+*/
 .authentication__button_type_signup {
   margin: 69px 0 0;
 }
@@ -107,7 +118,11 @@
   color: #4285F4;
   text-decoration: none;
 }
-
+/*
+.disabled {
+  background-color: rgba(66, 133, 244, 0.2);
+}
+*/
 @media (max-width: 768px) {
   .authentication {
     padding-top: 232px;
