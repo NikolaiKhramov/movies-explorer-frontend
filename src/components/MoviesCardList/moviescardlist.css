@@ -33,6 +33,13 @@
   cursor: pointer;
 }
 
+@media (max-width: 925px) {
+  .movies__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .movies {
     width: calc(100% - 60px);

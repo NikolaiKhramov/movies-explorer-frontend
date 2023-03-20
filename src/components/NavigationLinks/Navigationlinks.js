@@ -7,10 +7,9 @@ function Navigationlinks({ isMobile, onClose }) {
     <ul className="navigation__list">
       {isMobile ?
         <>
-
         <button className="navigation__close-icon" type="button" onClick={onClose}/>
         <li className="navigation__list-item">
-          <NavLink to="/" className="navigation__link">
+          <NavLink to="/" className={({isActive}) => `navigation__link ${isActive ? "navigation__link_active" : ""}`}>
             Главная
           </NavLink>
         </li>
